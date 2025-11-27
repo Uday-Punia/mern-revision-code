@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown 2</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .dropdown {
+        border: 1px solid blue;
+        padding: 0px;
+        width: 250px;
+        list-style-type: none;
+        background-color: blueviolet;
+        margin: 0;
+        display: none;
+        
+    }
+
+    li a {
+        text-decoration-line: none;
+        color: white;
+    }
+
+    li:hover {
+        background-color: white;
+    }
+
+    li:hover a {
+        color: blue;
+    }
+
+    .dropmain:hover .dropdown {
+        display: block;
+        
+    }
+    div.dropmain{
+        text-decoration-line: none;
+        background-color: black;
+        color: white;
+        height: 20px;
+        width: 100px;
+        position: relative;
+    }
+    div.dropdownlink{
+        position: absolute;
+
+    }
+</style>
+
+<body>
+    <div class="dropmain">
+        Main Menu
+        <div class="dropdownlink">
+            <ul class="dropdown">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Carrer">Carrier</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Report">Report Issue</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

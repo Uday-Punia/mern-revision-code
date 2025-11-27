@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-size: x-large;
+        font-style: normal;
+        background-color: #fafafa;
+
+    }
+
+    .heading {
+        background-color: yellow;
+        text-align: center;
+
+
+    }
+
+    header {
+        background-color: grey;
+        margin: 0;
+        height: 200px;
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        background-color: blueviolet;
+        position: sticky;
+        top: 0;
+        display: flex;
+
+
+    }
+
+    .navbar a {
+        text-decoration-line: none;
+        padding: 10px;
+        color: white;
+        margin: 0 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover {
+        background-color: white;
+        color: blueviolet;
+    }
+
+    .main_body {
+        display: flex;
+        margin: 0;
+    }
+
+    .leftcolumn {
+        flex: 33%;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+
+    .rightcolumn {
+        flex: 77%;
+        background-color: rgb(26, 204, 204);
+        padding: 20px;
+    }
+
+    .leftcolumn .dummyimage {
+        background-color: black;
+        height: 200px;
+        width: 200px;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+    }
+
+    .rightcolumn .dummyimage {
+        background-color: #f1f1f1;
+        color: black;
+        height: 200px;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+
+    }
+
+    @media screen and (max-width:500px) {
+
+        .navbar,
+        .main_body {
+            flex-direction: column;
+        }
+
+        body {
+            font-size: medium;
+        }
+
+        .navbar {
+            position: static;
+            text-align: center;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <p class="heading">IT IS BASCIALLY A DUMMY WEBSITE ONLY TO CHECK THE RESPONSIVENESS OF THE WEBSITE</p>
+        <header>
+            <div class="header">
+                <h1>Welcome Guys</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, doloribus.</p>
+            </div>
+        </header>
+        <div class="navbar">
+            <a href="Link">Link</a>
+            <a href="Link">Link</a>
+            <a href="Link">Link</a>
+            <a href="Link">Link</a>
+            <a href="Link">Link</a>
+        </div>
+        <div class="main_body">
+            <div class="leftcolumn">
+                <h2>Image</h2>
+                <p>Text related to image</p>
+                <div class="dummyimage">Image</div>
+                <h3>Some text</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quisquam explicabo dolorem, sed
+                    laboriosam rerum a, id laudantium consectetur eligendi ipsam quam fuga placeat, ut necessitatibus
+                    vitae
+                    laborum. Excepturi, quisquam?</p>
+                <br>
+                <h2>Image</h2>
+                <p>Text related to image</p>
+                <div class="dummyimage">Image</div>
+                <h3>Some text</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quisquam explicabo dolorem, sed
+                    laboriosam rerum a, id laudantium consectetur eligendi ipsam quam fuga placeat, ut necessitatibus
+                    vitae
+                    laborum. Excepturi, quisquam?</p>
+            </div>
+            <div class="rightcolumn">
+                <h1>Image</h1>
+                <p>Image captured</p>
+                <div class="dummyimage">Image</div>
+                <h2>Some text..</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda commodi culpa iure nam ducimus
+                    aspernatur debitis atque iusto molestias temporibus sint, nobis hic mollitia nemo minima omnis
+                    praesentium architecto ut?</p>
+                <br>
+                <h1>Image</h1>
+                <p>Image captured</p>
+                <div class="dummyimage">Image</div>
+                <h2>Some text..</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda commodi culpa iure nam ducimus
+                    aspernatur debitis atque iusto molestias temporibus sint, nobis hic mollitia nemo minima omnis
+                    praesentium architecto ut?</p>
+            </div>
+        </div>
+        <footer>
+            <h2>Footer</h2>
+            <p>Here is the footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>

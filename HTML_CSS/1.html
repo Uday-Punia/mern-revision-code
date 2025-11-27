@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JavaScript/while_loop.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flavors&family=Sofia&display=swap&effectname=font-effect-neon"
+        rel="stylesheet">
+
+    <style>
+        /*{
+            box-sizing:border-box ;
+        }
+        body{
+            background-color: green;
+            color: white;
+        }
+        div,p{
+            max-width: 1200px;
+            border: 5px dotted white; 
+            padding: 30px;
+            margin: 200px;
+            outline: 1pc solid blue;
+            outline-offset: 10px;
+
+        }*/
+        /* div {
+            background-color: black;
+            border: 2px dotted white;
+            margin: 20px;
+            padding: 5px;
+            outline: 6px solid blue;
+            outline-offset: 3px;
+        }
+
+        p {
+            color: white;
+            text-align: justify;
+            text-transform: uppercase;
+            line-height: 100px;
+            text-shadow: 2px 3px 10px red, 0 0 15px yellow, 0px 0px 50px green;
+            text-decoration: 10px underline white;
+            text-align-last: justify;
+
+        }
+
+        a {
+
+            font-family: "Sofia", cursive;
+            font-weight: 400;
+            font-style: normal; 
+
+        }
+
+        a:link {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            background-color: blue;
+            color: red;
+            text-decoration: double;
+        }
+
+        a:hover {
+            background-color: Green;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            background-color: brown;
+            color: yellow;
+            text-decoration: dotted;
+        } */
+        /* ol{
+            list-style-type: upper-roman;
+            list-style-position: inside;
+            background-color: green;
+            
+         }
+         ol li{
+            background-color: blanchedalmond;
+            margin: 20px;
+            padding: 2px;
+         } */
+
+         /* List styling css */
+         /* table {
+            width: 80%;
+            height: 600px;
+            border: 1px solid red;
+            border-collapse: collapse;
+
+        }
+
+        tr,
+        td {
+            border-bottom: 2px dashed black;
+            text-align: center;
+            background: linear-gradient(rgb(255, 20, 36), rgb(3, 56, 98), rgb(6, 0, 255));
+            color: white;
+            font-weight: bolder;
+
+
+        }
+
+        .rotate-in-center {
+            -webkit-animation: rotate-in-center 0.6s linear 1s alternate-reverse;
+            animation: rotate-in-center 0.6s linear 1s alternate-reverse;
+            overflow-x: auto;
+        }
+
+        @-webkit-keyframes rotate-in-center {
+            0% {
+                -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate-in-center {
+            0% {
+                -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                opacity: 1;
+            }
+        } */
+         .container{
+            height: 500px;
+            background-color: black;
+         }
+         .top{
+            display: inline-block;
+            height: 100px;
+            width: 50%;
+            margin: 50px;
+            text-align: center;
+            text-decoration: underline 2px black;
+            
+         }
+         p{
+            display: block;     
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="uday">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet quisquam illum id dolorum nisi esse ex voluptate magni mollitia.</p>
+        <p>Totam quidem vero amet, laborum porro, obcaecati impedit sapiente veniam, exercitationem nam quae dicta et aliquam tempore necessitatibus cum ratione.</p>
+        <p>Cupiditate nisi doloribus animi blanditiis, ipsa ex at modi inventore id eaque atque mollitia perspiciatis quibusdam consequatur, nemo quasi necessitatibus.</p>
+        <p>Maiores facere inventore, mollitia eos qui sed eveniet. Adipisci debitis doloremque maxime aliquam nam modi autem. Dolorum, nostrum doloremque. Nobis!</p>
+        <p>Maxime dolorum, exercitationem ea placeat ab nostrum? Maxime cumque modi, necessitatibus dicta temporibus placeat reiciendis ducimus doloribus quidem ipsam sint.</p>
+        <p>Voluptatem quidem a, reiciendis rerum quo molestiae aperiam! Impedit sequi dolore blanditiis pariatur libero ea? Ipsa similique tenetur neque atque!</p>
+        <p>Recusandae architecto est, reprehenderit maxime, voluptate magni ea sapiente impedit excepturi nisi voluptas blanditiis labore sequi neque, repudiandae dolore commodi.</p>
+        <p>Sunt ex dolore incidunt delectus veritatis aut dolor neque dicta, mollitia quis sit officia minima est odit eum? Nobis, hic!</p>
+        <p>Consectetur pariatur recusandae maxime optio impedit, rem quia delectus iusto eius repellendus voluptates sit deserunt laboriosam ullam ex! Quod, dolore?</p>
+        <p>Expedita culpa eaque veritatis aut tempora consequatur quae ipsum delectus et quas. Provident qui dolorum aliquam, voluptates sed temporibus dolore!</p>
+        <p>Possimus aliquam itaque suscipit excepturi deserunt sunt quis enim provident, inventore perferendis dolor repellat tempore consequuntur rem sequi saepe ipsum?</p>
+        <p>Similique rerum cum accusamus neque natus quae ipsa ducimus illo, esse, corporis dicta nostrum ea saepe, sapiente illum ut error?</p>
+        <p>Minus perferendis dolor quidem eveniet, fugit distinctio quibusdam eius magnam sit assumenda maxime quae inventore quam harum facere accusamus asperiores.</p>
+        <p>Quisquam molestias expedita, hic adipisci accusantium iusto repellendus laborum eligendi recusandae, maxime architecto quidem. Reprehenderit odit repellat rem sit est.</p>
+        <p>Magni illum totam temporibus molestias! Molestias suscipit quod nobis vitae, iste, aperiam sunt, qui incidunt amet assumenda numquam ex aliquid.</p>
+        <p>Assumenda molestiae odit, repellat deleniti cumque qui dicta magni quod veniam deserunt. Error maiores delectus incidunt reiciendis inventore, non earum.</p>
+        <p>At aperiam ullam tempora et ducimus odit accusamus voluptatibus tempore placeat! Enim nihil adipisci ex hic delectus eaque ducimus vitae.</p>
+        <p>Sit dicta cum veritatis ipsum, laudantium, a repellendus velit qui non voluptatem officia, placeat magnam asperiores in nesciunt quam error?</p>
+        <p>Cumque alias id modi sunt architecto itaque. Voluptates, ratione quam? Laborum distinctio assumenda est? Cumque omnis sint iusto fugiat? Nobis.</p>
+        <p>Possimus quae laudantium minima pariatur harum animi repudiandae, sequi architecto consectetur optio. Porro itaque in, delectus ratione esse reiciendis eum!</p>
+    </div> -->
+
+
+    <!-- <i class="fa-notdog fa-solid fa-house"></i>
+    <a href="https://www.youtube.com/" target="_blank" class="font-effect-neon">YOUTUBE</a>
+
+    <div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum, repudiandae eius assumenda provident
+            veniam magni
+            architecto? Earum et, molestiae saepe voluptate cupiditate suscipit nemo reprehenderit deserunt dolore
+            exercitationem
+            officiis cumque dolorum eveniet necessitatibus corporis voluptas dolorem dicta. Facilis rem natus a facere
+            quisquam
+            possimus quam inventore excepturi earum voluptas quos eum dolores distinctio maxime, molestias dolore
+            incidunt aliquam
+            sint omnis error odit perferendis. Eos ullam consequuntur deserunt, doloremque libero aperiam dolores ipsam
+            officiis
+            sapiente atque minus ducimus nisi quia.</p>
+    </div> -->
+    <!-- <ol>
+        <li>Uday</li>
+        <li>Uday</li>
+        <li>Uday</li>
+        <li>Uday</li>
+        <li>Uday</li>
+        <li>Uday</li>
+    </ol> -->
+
+<!-- List styling -->
+    <!-- <div class="rotate-in-center">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>State</th>
+            </tr>
+
+            <tr>
+                <td>Uday</td>
+                <td>Punia</td>
+                <td>Uttarakhand</td>
+            </tr>
+            <tr>
+                <td>Uday</td>
+                <td>Punia</td>
+                <td>Uttarakhand</td>
+            </tr>
+            <tr>
+                <td>Uday</td>
+                <td>Punia</td>
+                <td>Uttarakhand</td>
+            </tr>
+            <tr>
+                <td>Uday</td>
+                <td>Punia</td>
+                <td>Uttarakhand</td>
+            </tr>
+            <tr>
+                <td>Uday</td>
+                <td>Punia</td>
+                <td>Uttarakhand</td>
+            </tr>
+            <tr>
+                <td>Uday</td>
+                <td>Punia</td>
+                <td>Uttarakhand</td>
+            </tr>
+        </table>
+    </div> -->
+    <div class="container">
+        <p class="top">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, quis.</p>
+        <p>Sapiente libero cumque explicabo expedita nesciunt dolor corporis tempora exercitationem.</p>
+        <p>Odio deleniti alias voluptatum beatae, accusamus eos rem expedita ipsa!</p>
+    </div>
+</body>
+
+</html>

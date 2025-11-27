@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .dropdown {
+            position: relative;
+            background-image: linear-gradient(rgb(84, 232, 26),rgb(35, 29, 154));
+            color: black;
+            width: 100px;
+            height:100px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .dropdown_content{
+            display:none;
+            min-width: 150px;
+            position: absolute;
+            top: 150px;
+        }
+        .dropdown:hover .dropdown_content{
+            display: block;
+             font-size: xx-large;
+             color: white;
+             background-color: red;
+             border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown"> HELLO HOVER HERE ! HURRY UP !!
+        <div class="dropdown_content">RADHE RADHE 🙏🙏</div>
+    </div>
+</body>
+
+</html>
