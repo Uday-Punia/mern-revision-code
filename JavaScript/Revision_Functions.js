@@ -112,4 +112,3 @@
 // }
 
 // console.log(factorial(5)); // 120
-

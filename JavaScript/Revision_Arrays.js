@@ -156,3 +156,27 @@ var b=[12,23,5,6,8,6,3,7,1,30,12,3,6,3,6,8,2,5]
 //     Place : ${place}
 //     City : ${state}
 //     `)
+
+
+var a=[10,20,30,40,50,42,23,56]
+var b=[1,2,3,4,55,6,7,8,9,10]
+
+
+// //Map function higher order function    
+// console.log(a.map((x)=>x*5))
+// console.log(a.map((x)=>x/2))
+
+// //Filter function higher order function
+// console.log(a.filter((x)=>x>15))
+
+
+//Reduce
+// console.log(a.reduce((acc,curr)=>acc+curr))
+// console.log(b.reduce((acc,curr)=>{
+//     if(acc<curr){
+//         acc=curr
+//     }
+//     return acc
+// }))
+
+
