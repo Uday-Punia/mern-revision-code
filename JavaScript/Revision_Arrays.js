@@ -180,3 +180,16 @@ var b=[1,2,3,4,55,6,7,8,9,10]
 // }))
 
 
+// const arr=[
+//     {firstname:'Uday',lastname:'Punia',age:22,salary:500000},
+//     {firstname:'Avish',lastname:'Tyagi',age:22,salary:150000},
+//     {firstname:'Nishant',lastname:'Gola',age:22,salary:350000},
+//     {firstname:'Amit',lastname:'Tyagi',age:22,salary:250000},
+//     {firstname:'Tarun',lastname:'Dhiman',age:22,salary:300000},
+//     {firstname:'Uday',lastname:'Sharma',age:22,salary:200000}
+// ]
+
+// const output=arr.filter((x)=>x.salary>200000).map((x)=>x.firstname)
+// console.log(output)
+
+
