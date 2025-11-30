@@ -192,4 +192,7 @@ var b=[1,2,3,4,55,6,7,8,9,10]
 // const output=arr.filter((x)=>x.salary>200000).map((x)=>x.firstname)
 // console.log(output)
 
-
+// const ab=[56,6,2,5,6,5,3,6,6,9,4,2,5,9,6]
+// delete ab[1]
+// ab.splice(1,5,56,562,86,885,64)
+// console.log(ab.slice(0,5))
