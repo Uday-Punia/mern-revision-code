@@ -103,33 +103,69 @@ OBJECTS : -
 
 //Creating functions in object called methods
 
-let a ={
-    name:{
-        saluatation:"Mr",
-        firstname:"Uday",
-        lastname:"Punia"
-    },
-    address:{
-        addressLine1:"Mohalla Teliyan Jwalapur Haridwar",
-        addressLine2:{
-            city:"Jwalapur",
-            state:"Uttarakhand",
-            District:"Haridwar"
-        },
-        pincode:249407
-    },
-    Designation:"Front end developer",
-    Salary:116618,
-    incometax(){
-        this.incometax=this.Salary*15/100;
-        this.gross=this.Salary-this.incometax; 
-        console.log(`Total income tax that you have to pay to goverment ${this.incometax}`)   
-    },
-    display(){
-        console.log(`My name is ${this.name.firstname} and i am ${this.Designation} and my salary is around ${this.Salary} without deduction of income tax from and i am from ${this.address.addressLine1}`)
-    },
-    Gross_salary:()=>console.log(`My total salary is around ${a.gross}`)
+// let a ={
+//     name:{
+//         saluatation:"Mr",
+//         firstname:"Uday",
+//         lastname:"Punia"
+//     },
+//     address:{
+//         addressLine1:"Mohalla Teliyan Jwalapur Haridwar",
+//         addressLine2:{
+//             city:"Jwalapur",
+//             state:"Uttarakhand",
+//             District:"Haridwar"
+//         },
+//         pincode:249407
+//     },
+//     Designation:"Front end developer",
+//     Salary:116618,
+//     incometax(){
+//         this.incometax=this.Salary*15/100;
+//         this.gross=this.Salary-this.incometax; 
+//         console.log(`Total income tax that you have to pay to goverment ${this.incometax}`)   
+//     },
+//     display(){
+//         console.log(`My name is ${this.name.firstname} and i am ${this.Designation} and my salary is around ${this.Salary} without deduction of income tax from and i am from ${this.address.addressLine1}`)
+//     },
+//     Gross_salary:()=>console.log(`My total salary is around ${a.gross}`)
+// }
+// a.incometax()   
+// a.display()
+// a.Gross_salary()
+
+
+//Getter Setter :  we use the get and set to get rid from the the method switching Overhead problem function call overhead problem actual execution time of a function is less than the function switching
+// var emp={
+//     id:1001,
+//     name:"Uday Punia",
+//     set salary(amount){
+//         this.totalsalary=amount
+//     },
+//     get display(){
+//         console.log(`the total salary i have is ${this.totalsalary}`)
+//     }
+// } 
+// emp.salary=500000
+// emp.display 
+
+
+//Object Constructor : Basically creating a function with some parameters and in that function there we use this keyword and in this in the function and then we create a object basically and print the value of the object
+
+// var a=function(name,id,salary,dsg){
+//     this.name=name
+//     this.id=id
+//     this.salary=salary
+//     this.dsg=dsg
+// }
+// var emp1=new a("Uday",1001,152643,"Front end developer")
+// var emp2=new a("Uday",1001,152643,"Front end developer")
+// var emp3=new a("Uday",1001,152643,"Front end developer")
+// console.log(emp1)
+// console.log(emp2)
+// console.log(emp3)
+
+var employee_data=function(id,name,salary,city,dsg){
+    this.id=id
+    this
 }
-a.incometax()   
-a.display()
-a.Gross_salary()
