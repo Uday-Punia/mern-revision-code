@@ -165,7 +165,44 @@ OBJECTS : -
 // console.log(emp2)
 // console.log(emp3)
 
-var employee_data=function(id,name,salary,city,dsg){
-    this.id=id
-    this
+//Object prototype
+
+// var employee_data=function(id,name,salary,city,dsg){
+//     this.id=id
+//     this.name=name
+//     this.salary=salary
+//     this.city=city
+//     this.dsg=dsg
+// }
+// employee_data.prototype.gender="Male"
+// const emp1=new employee_data(10001,"Uday Punia",546466,"Haridwar","Frontend developer")
+
+// employee_data.prototype.display=function(){
+//     console.log(
+//         `
+//     id:${this.id}
+//     name:${this.name}
+//     salary:${this.salary}
+//     city:${this.city}
+//     dsg:${this.dsg}
+//     gender:${this.gender}
+//         `
+//     )
+// }
+
+// emp1.display()
+
+//Object.keys() : Return all the keys of the object
+const a ={
+    id:101,
+    name:"Uday Punia",
+    salary:50000,
+    city:"Haridwar",
+    dsg:"Front end developer",
+    gender:"Male"
 }
+console.log(Object.keys(a))
+//Object.values() : Return all the values of the object
+console.log(Object.values(a))
+//Object.entries() : Return all the entries of the object
+console.log(Object.entries(a))
