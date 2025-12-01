@@ -193,16 +193,66 @@ OBJECTS : -
 // emp1.display()
 
 //Object.keys() : Return all the keys of the object
-const a ={
-    id:101,
-    name:"Uday Punia",
-    salary:50000,
-    city:"Haridwar",
-    dsg:"Front end developer",
-    gender:"Male"
+// const a ={
+//     id:101,
+//     name:"Uday Punia",
+//     salary:50000,
+//     city:"Haridwar",
+//     dsg:"Front end developer",
+//     gender:"Male"
+// }
+// console.log(Object.keys(a))
+// //Object.values() : Return all the values of the object
+// console.log(Object.values(a))
+// //Object.entries() : Return all the entries of the object
+// console.log(Object.entries(a))
+
+//Object.assign() : Used to copy an object element into other
+const a={
+    Name:"Uday Punia",
+    Roll_No:55,
+    Class : "12th",
+    Subjects :"Hindi English Mathematics Physics Chemitry Biology"
 }
-console.log(Object.keys(a))
-//Object.values() : Return all the values of the object
-console.log(Object.values(a))
-//Object.entries() : Return all the entries of the object
-console.log(Object.entries(a))
+
+/*We use object assign in place of obj value given */
+
+// const b={}
+// Object.assign(b,a)
+// b.Roll_No=66
+// console.log(a)
+// console.log(b)
+
+
+// var b=a
+// console.log(a)
+// b.Name="Chaudhary"
+// console.log(b)
+// console.log(a)
+
+
+//Object.create() : Used to create a new object it make already exist object as make already exist in prototype on newly created object
+// const b=Object.create(a)
+// console.log(b)
+// console.log(b.Name)
+// console.log(b.Roll_No)
+
+
+
+//Object.freeze() : To check stop the object from insert deletion updation
+// console.log(Object.freeze(a))
+//Object.isFrozen : Basically it is used to check whether the object is freeze or not 
+// console.log(Object.isFrozen(a))
+
+// a.money=54554
+// a.caste="jaat"
+// delete a.Name
+// console.log(a)
+
+
+//Object.seal() : It is used to seal the object to stop this object from insertion deletion but updation can be done in this
+//console.log(Object.seal(a))
+//a.Name="chaudhary"
+//console.log(a)
+//Object.isSealed() : It is basically used to check whether the object is sealed or not
+// console.log(Object.isSealed(a))
