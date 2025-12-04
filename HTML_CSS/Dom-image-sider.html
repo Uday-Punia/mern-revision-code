@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Image Slider</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .main {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center {
+        background-color: black;
+        width: 80%;
+    }
+
+    .btn {
+        width: 100%;
+        border: 2px solid grey;
+        background-color: blue;
+        color: white;
+        font-size: larger;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="center">
+            <button class="btn" onclick="fun()">Click Me</button>
+            <p class="para"></p>
+        </div>
+    </div>
+</body>
+<script>
+    var buttom = document.querySelector(".btn")
+    var para = document.querySelector(".para")
+    var text = "You clicked me uday you will be successfull in life soon just keep working in yourself and be consistent"
+    var color = ["navy", "blue", "yellow", "red", "bluevoilet"]
+    var index = 0
+    function fun() {
+        para.innerHTML = text
+        para.style.color = "white"
+        para.style.backgroundColor = color[index]
+        if (index < color.length - 1) {
+            index++
+        }
+        else {
+            index = 0
+        }
+    }
+</script>
+
+</html>
