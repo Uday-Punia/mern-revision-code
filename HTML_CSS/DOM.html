@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom HTML</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .main {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center {
+        width: 80%;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: larger;
+        color: white;
+        background-color: blue;
+        border-radius: 50px;
+    }
+
+    .para {
+        width: 100%;
+        text-align: justify;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="center">
+            <button class="btn" onclick="fun()">Change</button>
+            <p class="para"></p>
+        </div>
+    </div>
+</body>
+<script>
+    var check = document.querySelector("button")
+    var paragraphs = document.querySelector("p")
+    var text = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam accusamus atque veritatis recusandae culpa dolorum, iure temporibus, tempore eligendi, vitae harum quae voluptas nam quisquam dolore totam dignissimos animi? Iure cum vero maiores at error ipsam eos harum. Iusto animi iste alias quia ab ullam aut neque veritatis. Doloremque, cum."
+    var text2 = "alias quia ab ullam aut neque veritatis. Doloremque, cum."
+    paragraphs.innerHTML=text
+
+    var color=["navy","blue","green","yellow","white","grey"]
+    var index=0
+    var centers=document.querySelector(".center")
+    setInterval(()=>{
+        centers.style.backgroundColor=color[index]
+        if(index<color.length-1){
+            index++
+            if(color[index]==="white"){
+                centers.style.Color="black"
+            }
+        }
+        else{
+            index=0
+        }
+    },1000)
+
+
+</script>
+
+</html>
