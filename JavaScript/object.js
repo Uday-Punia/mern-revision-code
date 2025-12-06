@@ -1,4 +1,4 @@
-//Object literal 
+//Object literal
 //Object intialization
 // var a={
 //     id:1001,
@@ -7,7 +7,6 @@
 //     salary : 189000,
 // }
 // console.log(a)
-
 
 //Creating objects using simple curly braces
 
@@ -47,7 +46,7 @@
 //     Name:"uday",
 //     Course:"MERN STACK",
 //     Duration:"6 months"
-// } 
+// }
 // obj.Surname="Chaudhary"
 // console.log(obj)
 // delete obj.id
@@ -79,7 +78,6 @@
 
 //Functions in objects are called method:
 
-
 // var obj={
 //     id:1432,
 //     Division:"First",
@@ -109,17 +107,59 @@
 // a.calculate(700)
 // a.display()
 
-    // var a={
-    //     id:1111,
-    //     name:"Uday",
-    //     set setSalary(Package){
-    //         this.salary=Package
-    //     },
-    //     get display(){
-    //         console.log(`The total package is of ${this.salary}`)
-    //     }
-    // }
-    // a.setSalary=2500000
-    // a.display
+// var a={
+//     id:1111,
+//     name:"Uday",
+//     set setSalary(Package){
+//         this.salary=Package
+//     },
+//     get display(){
+//         console.log(`The total package is of ${this.salary}`)
+//     }
+// }
+// a.setSalary=2500000
+// a.display
 
-    
+var obj = {
+  name: "Uday",
+  class: "Btech",
+  Rollno: 66,
+  salary: 212115,
+};
+
+// Object.getOwnPropertyDescriptor() Basically it is used to get the details about the object what types of works we can do in this object
+// console.log(Object.getOwnPropertyDescriptor(obj,"name"))
+
+//Object.setPrototypeOf() basically it is used to set the prototype value in this basically
+// Object.setPrototypeOf(obj,{
+//     Millionaire_rank:10
+// })
+
+//Object.getPrototypeOf() : Basically it is used to get the prototype value that we set earlier
+// console.log(Object.getPrototypeOf(obj))
+
+//Object.is() : Basically it is used to check whether the value is same as the given one or not
+// console.log(Object.is(obj.Rollno,66))
+
+//Object.defineProperty(object,description) : Used to set property with details
+// obj.email="udaypunia9027@gmail.com"
+// console.log(Object.getOwnPropertyDescriptor(obj,"name"))
+// Object.defineProperty(obj,"email",{
+//     value:"udaypunia9027@gmail.com",
+//     writable:false,
+//     enumerable:true,
+//     configurable:true
+// })
+// console.log(Object.getOwnPropertyDescriptor(obj,"email"))
+
+// Object.defineProperties(obj, {
+//   email: {
+//     value: "udaypunia9027@gmail.com",
+//   },
+//   Degree: {
+//     value: "Btech CSE",
+//   },
+// });
+// console.log(Object.getOwnPropertyDescriptor(obj, "email"));
+// console.log(Object.getOwnPropertyDescriptor(obj, "Degree"));
+// console.log(Object.getOwnPropertyDescriptor(obj, "name"));
